@@ -1,0 +1,21 @@
+# Libraries you like to use (http://lib.haxe.org/)
+# -lib js-kit
+# -lib hxnodejs#
+# -lib vue
+# -lib hxexterns
+# -lib haxelow
+
+# Integrate files to classpath
+-cp src
+-main Main
+-js bin/example_javascript.js
+# -D source-map-content
+# -D state=debug
+# -debug
+
+# Dead code elimination : remove unused code
+# "-dce no" : do not remove unused code
+# "-dce std" : remove unused code in the std lib (default)
+# "-dce full" : remove all unused code
+-dce full
+
